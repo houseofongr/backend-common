@@ -24,3 +24,14 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.hoo'
+            artifactId = 'common'
+            version = '1.0.2'
+            from components.java
+        }
+    }
+}
