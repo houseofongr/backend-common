@@ -3,8 +3,14 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.aoo'
-version = '0.0.1-SNAPSHOT'
+group = 'com.hoo'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
 
 repositories {
     mavenCentral()
