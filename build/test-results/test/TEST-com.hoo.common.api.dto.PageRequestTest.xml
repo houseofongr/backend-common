@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hoo.common.api.dto.PageRequestTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-07-17T20:26:38.133Z" hostname="yeobdol-ui-MacBookAir.local" time="0.008">
-  <properties/>
-  <testcase name="페이지네이션 변환" classname="com.hoo.common.api.dto.PageRequestTest" time="0.006"/>
-  <testcase name="offset 1 적용" classname="com.hoo.common.api.dto.PageRequestTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
