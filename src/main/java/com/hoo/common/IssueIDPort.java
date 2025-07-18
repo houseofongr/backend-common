@@ -1,4 +1,4 @@
-package com.hoo.common.api;
+package com.hoo.common;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package com.hoo.common.api.dto;
+package com.hoo.common.internal.api.dto;
 
 import com.hoo.common.enums.Authority;
 

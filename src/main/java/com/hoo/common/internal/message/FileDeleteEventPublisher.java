@@ -1,4 +1,4 @@
-package com.hoo.common.api.internal.async;
+package com.hoo.common.internal.message;
 
 import java.util.List;
 import java.util.UUID;
