@@ -1,16 +1,17 @@
 package com.hoo.common.internal.api.dto;
 
 import com.hoo.common.enums.Authority;
+import com.hoo.common.enums.FileType;
 
 import java.util.UUID;
 
-public record UploadFileResponse(
+public record UploadFileCommand(
         UUID id,
         UUID ownerID,
         Long size,
         String realName,
         String fileSystemName,
-        com.hoo.common.enums.FileType fileType,
+        FileType fileType,
         Authority authority
 ) {
 }

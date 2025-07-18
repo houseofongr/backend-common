@@ -1,7 +1,7 @@
 package com.hoo.common.api.dto;
 
-import com.hoo.common.internal.api.dto.PageQueryResult;
-import com.hoo.common.internal.api.dto.PageRequest;
+import com.hoo.common.web.dto.PageQueryResult;
+import com.hoo.common.web.dto.PageRequest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

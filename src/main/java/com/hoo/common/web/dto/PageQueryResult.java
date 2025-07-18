@@ -1,4 +1,4 @@
-package com.hoo.common.internal.api.dto;
+package com.hoo.common.web.dto;
 
 import java.util.List;
 import java.util.function.Function;

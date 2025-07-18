@@ -2,7 +2,7 @@ package com.hoo.common.internal.message.dto;
 
 import java.util.UUID;
 
-public record FileDeleteMessage(
+public record DeleteFileMessage(
         UUID deleteFileID,
         Long deleteTimestamp
 ) {
