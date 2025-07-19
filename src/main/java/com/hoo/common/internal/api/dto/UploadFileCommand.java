@@ -7,14 +7,14 @@ import java.util.UUID;
 
 public record UploadFileCommand(
         InputStream inputStream,
-        FileMetadata fileMetadata
+        FileInfo.FileMetadata fileMetadata
 ) {
 
     public static UploadFileCommand from(FileCommand fileCommand, UUID ownerID, AccessLevel accessLevel) {
 
         return new UploadFileCommand(
                 fileCommand.inputStream(),
-                new FileMetadata(
+                new FileInfo.FileMetadata(
                         fileCommand.size(),
                         fileCommand.name(),
                         fileCommand.contentType(),
