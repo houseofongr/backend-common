@@ -1,6 +1,6 @@
-package com.hoo.common.internal.api;
+package com.hoo.common.internal.api.user;
 
-import com.hoo.common.internal.api.dto.UserInfo;
+import com.hoo.common.internal.api.user.dto.UserInfo;
 
 import java.util.UUID;
 

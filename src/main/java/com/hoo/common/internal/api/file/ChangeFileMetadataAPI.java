@@ -1,7 +1,7 @@
-package com.hoo.common.internal.api;
+package com.hoo.common.internal.api.file;
 
 import com.hoo.common.enums.Authority;
-import com.hoo.common.internal.api.dto.FileInfo;
+import com.hoo.common.internal.api.file.dto.FileInfo;
 
 import java.util.List;
 import java.util.UUID;

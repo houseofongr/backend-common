@@ -1,4 +1,4 @@
-package com.hoo.common.internal.api.dto;
+package com.hoo.common.internal.api.user.dto;
 
 import java.util.UUID;
 

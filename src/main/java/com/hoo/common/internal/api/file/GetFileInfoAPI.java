@@ -1,6 +1,6 @@
-package com.hoo.common.internal.api;
+package com.hoo.common.internal.api.file;
 
-import com.hoo.common.internal.api.dto.FileInfo;
+import com.hoo.common.internal.api.file.dto.FileInfo;
 
 import java.util.Collection;
 import java.util.List;
