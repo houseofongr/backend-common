@@ -6,20 +6,23 @@ import java.io.InputStream;
 import java.util.UUID;
 
 public record UploadFileCommand(
-        InputStream inputStream,
-        FileInfo.FileMetadata fileMetadata
+        FileSource fileSource,
+        Metadata metadata
 ) {
 
-    public static UploadFileCommand from(FileCommand fileCommand, UUID ownerID, AccessLevel accessLevel) {
+    public record FileSource(
+            InputStream inputStream,
+            String contentType,
+            String name,
+            Long size
+    ) {
+    }
 
-        return new UploadFileCommand(
-                fileCommand.inputStream(),
-                new FileInfo.FileMetadata(
-                        fileCommand.size(),
-                        fileCommand.name(),
-                        fileCommand.contentType(),
-                        ownerID,
-                        accessLevel
-                ));
+    public record Metadata(
+            String domain,
+            UUID ownerID,
+            AccessLevel accessLevel
+    ) {
+
     }
 }

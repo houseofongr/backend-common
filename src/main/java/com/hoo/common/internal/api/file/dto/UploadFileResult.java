@@ -6,6 +6,6 @@ import java.util.UUID;
 public record UploadFileResult(
         UUID id,
         URI fileUrl,
-        Long updatedTimestamp
+        Long uploadedTimestamp
 ) {
 }
