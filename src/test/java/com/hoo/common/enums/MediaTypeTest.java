@@ -10,13 +10,13 @@ class MediaTypeTest {
     @Test
     @DisplayName("유효한 MIME 타입을 통해 MediaType 반환")
     void of_validMimeTypes() {
-        assertThat(MediaType.of("image/jpeg")).isEqualTo(MediaType.IMAGE);
-        assertThat(MediaType.of("image/png")).isEqualTo(MediaType.IMAGE);
-        assertThat(MediaType.of("video/mp4")).isEqualTo(MediaType.VIDEO);
-        assertThat(MediaType.of("audio/mpeg")).isEqualTo(MediaType.AUDIO);
-        assertThat(MediaType.of("application/pdf")).isEqualTo(MediaType.DOCUMENT);
+        assertThat(MediaType.of("image/jpeg")).isEqualTo(MediaType.IMAGES);
+        assertThat(MediaType.of("image/png")).isEqualTo(MediaType.IMAGES);
+        assertThat(MediaType.of("video/mp4")).isEqualTo(MediaType.VIDEOS);
+        assertThat(MediaType.of("audio/mpeg")).isEqualTo(MediaType.AUDIOS);
+        assertThat(MediaType.of("application/pdf")).isEqualTo(MediaType.DOCUMENTS);
         assertThat(MediaType.of("application/vnd.openxmlformats-officedocument.wordprocessingml.document"))
-                .isEqualTo(MediaType.DOCUMENT);
+                .isEqualTo(MediaType.DOCUMENTS);
     }
 
     @Test
@@ -36,7 +36,7 @@ class MediaTypeTest {
     @Test
     @DisplayName("지원하지 않는 MIME 타입이면 UnsupportedOperationException 발생")
     void of_unsupportedType_shouldThrowUnsupportedOperationException() {
-        assertThatThrownBy(() -> MediaType.of("text/plain"))
+        assertThatThrownBy(() -> MediaType.of("application/x-tar"))
                 .isInstanceOf(UnsupportedOperationException.class)
                 .hasMessageContaining("지원하지 않는");
     }
