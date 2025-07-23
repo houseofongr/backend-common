@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.UUID;
 
 public record GetFileInfoCommand(
-        List<FileOwnership> fileOwnershipList
+        List<FileOwnership> fileOwners
 ) {
     public record FileOwnership(
             UUID fileID,

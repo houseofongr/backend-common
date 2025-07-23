@@ -9,6 +9,9 @@ public record UploadFileCommand(
         FileSource fileSource,
         Metadata metadata
 ) {
+    public static UploadFileCommand from(FileSource fileSource, String domain, UUID ownerID, AccessLevel accessLevel) {
+        return new UploadFileCommand(fileSource, new Metadata(domain, ownerID, accessLevel));
+    }
 
     public record FileSource(
             InputStream inputStream,
