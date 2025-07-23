@@ -1,9 +1,17 @@
 package com.hoo.common.enums;
 
-public enum Domain {
-    UNIVERSE, USER, FILE, AUTH;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
-    public String getName() {
-        return this.name().toLowerCase();
-    };
+@Getter
+@RequiredArgsConstructor
+public enum Domain {
+    USER("user", "users"),
+    UNIVERSE("universe", "universes"),
+    FILE("file", "files"),
+    AUTH("auth", "auth");
+
+    private final String name;
+    private final String apiPath;
+
 }
