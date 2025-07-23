@@ -1,5 +1,5 @@
 package com.hoo.common.internal.api.auth;
 
-public interface SaveBusinessUserCredentialAPI {
+public interface RegisterBusinessUserCredentialAPI {
     void saveBusinessUserPassword(String email, String password);
 }
