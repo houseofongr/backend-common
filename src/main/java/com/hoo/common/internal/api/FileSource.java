@@ -6,6 +6,7 @@ public record FileSource(
         InputStream inputStream,
         String contentType,
         String name,
-        Long size
+        Long size,
+        String domain
 ) {
 }
