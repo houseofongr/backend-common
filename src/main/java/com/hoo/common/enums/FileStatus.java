@@ -2,7 +2,8 @@ package com.hoo.common.enums;
 
 public enum FileStatus {
     PENDING,    // 업로드 대기
-    CREATED,    // 업로드 완료
+    TEMP,       // 업로드 완료, 메타데이터 등록 전
+    CREATED,    // 메타데이터 등록 완료
     PROCESSING, // 후처리 중
     UPDATED,    // 내용 변경됨
     DELETED,    // 삭제됨
