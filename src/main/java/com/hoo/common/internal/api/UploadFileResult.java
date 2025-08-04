@@ -1,8 +1,10 @@
 package com.hoo.common.internal.api;
 
+import java.net.URI;
 import java.util.UUID;
 
 public record UploadFileResult(
-        UUID fileID
+        UUID id,
+        URI url
 ) {
 }
